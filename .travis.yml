@@ -2,7 +2,7 @@ language: java
 install:
     - wget https://cdn.getbukkit.org/spigot/spigot-1.16.1.jar && mvn install:install-file -Dfile=spigot-1.16.1.jar -DgroupId=org.spigotmc -DartifactId=spigot -Dversion=1.16.1-R0.1-SNAPSHOT -Dpackaging=jar
 jdk: 
-   - oraclejdk8
+   - adoptopenjdk16
 dist: trusty
 before_deploy:
   - git config --global user.email "builds@travis-ci.com"
